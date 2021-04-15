@@ -1,5 +1,8 @@
 /*MediaQuiers - Mobiles*/
+h1{
 
+    display: none;
+}
 @media only screen and (max-width: 360px) {
 
     .header{
@@ -45,7 +48,10 @@
     font-size: 31px;
    }
     
-  
+    h1{
+
+        display: block;
+    }
 
 
 }
