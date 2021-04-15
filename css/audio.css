@@ -1,0 +1,174 @@
+
+
+.myaudio{
+
+    width: 441px;
+    margin: auto;
+    background: white;
+    height: 437px;
+    padding-bottom: 107px;
+    border-top-left-radius: 53px;
+    border-bottom-left-radius: 53px;
+}
+
+.myaudio img {
+
+    width: 124px;
+    margin-left: 9px;
+    margin-top: 31px;
+    border-radius: 100px;
+    border: dashed black;
+
+}
+
+.myaudio .audio-title{
+
+    text-align: center;
+}
+
+.myaudio .myRange{
+
+    -webkit-appearance: none;
+    width: 80%;
+    height: 2px;
+    outline: none;
+    background-color: #667bf2;
+    border-radius: 20px;
+    position: relative;
+    top: 4%;
+    left: 61px;
+    margin: -23px
+}
+
+.myaudio .current_time {
+
+    position: relative;
+    left: -151px;
+    top: -19px;
+    
+}
+
+.myaudio .fa-volume{
+    position: relative;
+    top: 120px;
+    right: 222px;
+    color: #0075ff;
+}
+
+.myaudio .fa-volume-mute{
+
+    position: relative;
+    top: 176px;
+    right: 121px;
+    color: #0075ff;
+}
+
+.myaudio .duration{
+
+    position: relative;
+    left: 160px;
+    top: -52px;
+    z-index: 9999999999999;
+}
+
+.myaudio .fa-play{
+
+    width: 80%;
+    margin-left: 16px;
+    font-size: 83px;
+    color: #0075ff;
+}
+
+.myaudio .fa-pause{
+    
+    width: 80%;
+    margin-left: 16px;
+    font-size: 83px;
+    color: #0075ff;
+
+}
+
+.myaudio .fa-redo{
+
+    width: 80%;
+    margin-left: 22px;
+    font-size: 44px;
+}
+
+.MusicList{
+
+    background-color: white;
+    width: 623px;
+    height: 517px;
+    position: relative;
+    padding-left: 18px;
+    padding-top: 29px;
+    padding-bottom: 19px;
+    bottom: -35px;
+    border-top: #252525 solid;
+    border-bottom-right-radius: 10px;
+    overflow: auto;
+    max-height: 500px;
+    left: 398px;
+    bottom: 409px;
+    /* border-left: solid black 1px; */
+    /* border-top-left-radius: 72px; */
+
+}
+
+
+
+.MusicList li:hover{
+
+    background-color: #FF5E5E;
+}
+
+::-webkit-scrollbar{
+
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+
+background-color: #FF5E5E;
+    
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #FF5E5E; 
+    width: 1px;
+
+  }
+  
+.content{
+
+    position: relative;
+    width: 88%;
+    right: 311px;
+    top: -91px;
+}
+
+.x2-icon{
+
+    padding-left: 1px;
+    font-size: 20px;
+}
+
+.content h2{
+
+    color: aliceblue;
+    padding-bottom: 8px;
+}
+
+.selected_audio{
+
+    background-color: #FF5E5E;
+    display: inherit;
+    list-style: none;
+    margin: 27px;
+    color: aliceblue;
+    text-align: center;
+    height: 51px;
+    padding-top: 13px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,51 @@
+/*MediaQuiers - Mobiles*/
+
+@media only screen and (max-width: 360px) {
+
+    .header{
+
+    }
+    .navbar {
+        position: relative;
+        top: 33px;
+        left: -44px;
+    }
+
+    .header .container {
+        width: 1074px;
+        margin: auto;
+    }
+    
+    .header .container .logo {
+        position: relative;
+        right: 976px;
+        width: 100px;
+        top: -39px;
+    }
+
+   .content {
+    text-align: center;
+    padding-top: 110px;
+    width: 1144px;
+    margin-left: 505px;
+    }
+
+    .second-section{
+        width: 1144px;
+        height: 100%;
+    }
+    
+   .third-section .card-1 {
+    float: left;
+    margin: 87px;
+    width: 796px;
+    }
+
+   .third-section .card-1 .card-title {
+    font-size: 31px;
+   }
+    
+  
+
+
+}

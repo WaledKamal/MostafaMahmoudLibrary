@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <title>الكتب الورقية</title>
+    <script src="js/main.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/core.js"></script>
+</head>
+<body>
+    <!--Header-->
+    <div class="header">
+        <div class="container">
+            <ul class="navbar">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li class="menu normal-li"><a class="active" href="books.html">الكتب</a>
+                     <ul class="submenu">
+                         <li><a href="books.html">الكتب الورقية
+                                <i class="fas fa-book x1-icon"></i>
+                         </a></li>
+                         <li><a href="sounds.html">الصوتيات</a>
+                            <i class="fas fa-file-audio x1-icon"></i>
+                        </li>
+                     </ul>
+                </li>
+                <li class="normal-li"><a href="about.html">حول</a>
+                </li>
+                <li class="normal-li"><a href="contact-us.html">اتصل بنا</a></li>
+            </ul>
+            <img src="img/logo.png" class="logo" alt="logo" width="200">
+        </div>
+    </div>
+     <!--Book Board-->
+     <input id="bookfiltter" type="text">
+         <div class="viewerpdf">
+            <iframe id="pdfV"
+            src="books/رحلتي من الشك إلى الإيمان.pdf" 
+            width="100%" height="500" style="width:100%; height:500px;border: 4px solid #34495E;border-radius:2px">
+            </iframe>
+                <ul class="book">
+                    <!--Start LI -->
+                    <li src="books/رحلتي من الشك إلى الإيمان.pdf" id="1" 
+                    class="listo"
+                    onclick="viewpdf(1)">
+                   رحلتي من الشك الي الايمان 
+                   <i class="fas fa-book x1-icon"></i>
+                  </li>
+                   <!--End LI-->
+                       <!--Start LI -->
+                       <li src="books/حوار مع صديقى الملحد.pdf" id="2" 
+                       class="listo"
+                       onclick="viewpdf(2)">
+                       
+                       حوار مع صديقي الملحد
+                       <i class="fas fa-book x1-icon"></i>
+                     </li>
+                      <!--End LI-->
+              </ul> 
+            </div>
+            <div class="footer" style="width: 100%;
+clear: both;
+position: relative;
+height: 6px;
+margin-top: -6px;
+background-color: #252525;
+top: 1px;">
+    <div class="copyright">
+        جميع الحقوق محفوظة لدى المكتبة
+        <a href="#">Mostafa Mahmoud Library ©</a>
+    </div>
+     <script src="js/app.js"></script>
+</body>
+</html>

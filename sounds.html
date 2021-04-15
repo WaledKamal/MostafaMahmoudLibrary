@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/audio.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <title>الكتب الورقية</title>
+</head>
+<body>
+    <!--Header-->
+    <div class="header" dir="rtl">
+      <div class="container">
+          <ul class="navbar">
+              <li><a href="index.html">الرئيسية</a></li>
+              <li class="menu normal-li"><a class="active" href="books.html">الكتب</a>
+                   <ul class="submenu">
+                       <li><a href="books.html">الكتب الورقية
+                              <i class="fas fa-book x1-icon"></i>
+                       </a></li>
+                       <li><a href="sounds.html">الصوتيات</a>
+                          <i class="fas fa-file-audio x1-icon"></i>
+                      </li>
+                   </ul>
+              </li>
+              <li class="normal-li"><a href="about.html">حول</a>
+              </li>
+              <li class="normal-li"><a href="contact-us.html">اتصل بنا</a></li>
+          </ul>
+          <img src="img/logo.png" class="logo" alt="logo" width="200">
+      </div>
+  </div>
+<div class="content">
+    <h2>المقاطع الصوتية</h2>
+<!--Audio Player-->
+<div class="myaudio">
+        <audio id="myPlayer" src="http://bro5ive.com/sounds/basr.mp4"></audio>
+        <img src="img/author.jpg" class="author" id="photo" width="100">
+        <div class="audio-title" id="readername">الدكتور مصطفى محمود
+          <i class="fas fa-file-audio x2-icon"></i>
+        </div>
+        <input type="range" class="myRange" id="myRange" value="0" min="0" ><i id="full-v" class="fas fa-volume"></i>
+        <input type="range" class="myVolume" id="Volume" value="100" min="0" max="100"><i id="mute" class="fas fa-volume-mute"></i>
+        <div class="current_time" id="current_time">00:00</div>
+        <div class="duration" id="duration">06:01</div>
+        <div id="play-btn" id="play-btn" class="fa fa-play"></div>
+    <ul class="MusicList">
+        <h3>قائمة التشغيل</h3>
+        <!--ListAudio-->
+      <li id="1" class="active-audio" author="الدكتور مصطفى محمود" photo="img/author.jpg" onclick="play(1)" src="http://bro5ive.com/sounds/basr.mp4">
+        البصر - دكتور مصطفى محمود
+        <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+     <li id="2" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(2)"
+     src="http://bro5ive.com/sounds/rehla.mp4">
+     رحلتي من الشك الي الايمان 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="3" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(3)"
+     src="http://bro5ive.com/sounds/rohwelgsd.mp4">
+     الروح والجسد 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="4" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(4)"
+     src="http://bro5ive.com/sounds/sadekeelmolhed.mp4">
+     حوار مع صديقي الملحد
+      <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="5" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(5)"
+     src="http://bro5ive.com/sounds/FelhobWalhaya.mp4">
+      في الحب والحياة 
+      <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+      
+     <li id="6" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(6)"
+     src="http://bro5ive.com/sounds/almnafsqouraney.mp4">
+     علم نفس قرأني جديد 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="7" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(7)"
+     src="http://bro5ive.com/sounds/Altwra.mp3">
+     التوراة
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="8" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(8)"
+     src="http://bro5ive.com/sounds/Anashid%20Elesm%20Webra.mp4">
+     اناشيد الاثم والبراءة
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+
+     <li id="9" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(9)"
+     src="http://bro5ive.com/sounds/EtrafatAshek.mp4">
+     اعترافات عاشق
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+
+     <li id="10" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(10)"
+     src="http://bro5ive.com/sounds/InshtineWensbia.mp4">
+     اينشتاين والنسبية
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+
+     <li id="11" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(11)"
+     src="http://bro5ive.com/sounds/YawmyatNsElil.mp4">
+      يوميات نص الليل
+      <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     
+     <li id="12" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(12)"
+     src="http://bro5ive.com/sounds/55MoshkletHob.mp4">
+     55 مشكلة حب
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="13" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(13)"
+     src="http://bro5ive.com/sounds/AlshitanYahkom.mp4">
+    الشيطان يحكم 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="14" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(14)"
+     src="http://bro5ive.com/sounds/allahweensan1.mp4">
+     الله والانسان 1 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="15" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(15)"
+     src="http://bro5ive.com/sounds/alahweensan2.mp4">
+     الله والانسان 2 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="16" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(16)"
+     src="http://bro5ive.com/sounds/allahwensan3.mp4">
+     الله والانسان 3 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="17" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(17)"
+     src="http://bro5ive.com/sounds/allashwenssan4.mp4">
+     الله والانسان 4 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+     
+     <li id="18" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(18)"
+     src="http://bro5ive.com/sounds/allahweensan5.mp4">
+     الله والانسان 5 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+     
+     
+     <li id="19" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(19)"
+     src="http://bro5ive.com/sounds/elseralazm.mp4">
+    السر الاعظم 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+     
+     <li id="20" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(20)"
+     src="http://bro5ive.com/sounds/thtsefr.mp4">
+    رجل تحت الصفر
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+     
+     
+     <li id="21" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(21)"
+     src="http://bro5ive.com/sounds/raitallah.mp4">
+    رأيت الله 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     
+     <li id="22" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(22)"
+     src="http://bro5ive.com/sounds/moghamraFeelshraa.mp4">
+     مغامرة في الصحراء
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="23" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(23)"
+     src="http://bro5ive.com/sounds/alabelserkelsyse.mp4">
+     العاب السيرك السياسي
+       <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="24" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(24)"
+     src="http://bro5ive.com/sounds/mosta.mp4">
+     رواية المستحيل 1 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="25" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(25)"
+     src="http://bro5ive.com/sounds/mostahell2.mp4">
+     رواية المستحيل 2 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="26" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(26)"
+     src="http://bro5ive.com/sounds/mosta3.mp4">
+     رواية المستحيل 3 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="27" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(28)"
+     src="http://bro5ive.com/sounds/mosta4.mp4">
+     رواية المستحيل 4 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="29" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(29)"
+     src="http://bro5ive.com/sounds/mosta5.mp4">
+     رواية المستحيل 5 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+
+     <li id="30" class="active-audio" 
+     author="الدكتور مصطفى محمود" 
+     photo="img/author.jpg" onclick="play(30)"
+     src="http://bro5ive.com/sounds/mosta6.mp4">
+     رواية المستحيل 6 
+     <i class="fas fa-file-audio x2-icon"></i>
+     </li>
+     
+    </ul>  
+  </div>  
+</div>
+
+  <br>
+  
+  
+  <div class="footer">
+    <div class="copyright">
+        جميع الحقوق محفوظة لدى المكتبة
+        <a href="#">Mostafa Mahmoud Library ©</a>
+    </div>
+ </div>
+        <script src="js/app.js"></script>
+    </body>
+    </html>

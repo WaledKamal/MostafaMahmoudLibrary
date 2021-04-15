@@ -1,0 +1,33 @@
+<div class="some-input-field-class">
+	<input type="text" name="filter" id="filter">
+	<label for="filter">Filter Names</label>
+ </div>
+ 
+ <ul class="my-user-collection">
+   <li class="thumb selectable arrow light" style="margin-bottom:-5px;"
+   data-image="http://cdn.tapquo.com/lungo/icon-144.png">
+   <strong class="name">Peter <font data-count="0" style="position:relative;top:-2px;"> </font></strong> 
+   <small class="description">Hi!</small> 
+   </li>
+   ...
+ </ul>
+
+
+ <script>
+	 // Load the event listener
+document.querySelector('#filter').addEventListener('keyup', filterNames);
+
+function filterNames(e) {
+  const text = e.target.value.toLowerCase();
+  document.querySelectorAll('.selectable').forEach(
+    function(name) {
+      let item = name.firstChild.textContent;
+      if (item.toLowerCase().indexOf(text) != -1) {
+        name.style.display = 'block';
+      } else {
+        name.style.display = 'none';
+      }
+    }
+  );
+}
+ </script>
