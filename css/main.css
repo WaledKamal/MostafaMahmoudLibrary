@@ -106,10 +106,9 @@ margin: auto;
 }
 
 .second-section {
-
-
     background-color: white;
-    width: 98%;
+    width: 1140px;
+    margin: auto;
     height: 100%;
     position: relative;
     top: 450px;
